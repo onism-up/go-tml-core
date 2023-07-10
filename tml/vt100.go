@@ -1,4 +1,4 @@
-package UI
+package tml
 
 // squareDrawing renders a Quadrilateral in a terminal by parsing the quadrilateral
 // @parma ql: target rendered quadrilateral
