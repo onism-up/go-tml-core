@@ -7,7 +7,7 @@
 ![Status](https://img.shields.io/badge/Status-Test%20phase-red)
 
 ## Demonstration
-![Demonstration]([https://picdm.sunbangyan.cn/2023/07/10/nuo6go.gif](https://raw.githubusercontent.com/onism-up/go-tml-core/main/static/medium/demo.gif))
+![Demonstration](https://raw.githubusercontent.com/onism-up/go-tml-core/main/static/medium/demo.gif)
 
 ## Peculiarity
 - Low memory and resource usage
