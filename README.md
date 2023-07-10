@@ -7,7 +7,7 @@
 ![Status](https://img.shields.io/badge/Status-Test%20phase-red)
 
 ## Language
-[zh-ch](github.com/onism-up/go-tml-core/blob/main/README_ZH_CN.md)
+[ZH-CN](/README_ZH_CN.md)
 
 ## Demonstration
 ![Demonstration](https://raw.githubusercontent.com/onism-up/go-tml-core/main/static/medium/demo.gif)
