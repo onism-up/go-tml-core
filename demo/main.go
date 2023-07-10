@@ -1,4 +1,4 @@
-package Demo
+package demo
 
 import (
 	UI "github.com/onism-up/go-tml-core/tml"
