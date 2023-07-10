@@ -21,7 +21,7 @@
 
 > 使用tml之前请确保目标运行终端支持VT100
 ## 开始
-这里只展示了部分代码段，不能被直接运行，完整代码参考[demo](github.com/onism-up/go-tml-core/tree/main/demo)
+这里只展示了部分代码段，不能被直接运行，完整代码参考[demo](/demo)
 ```go
 package main
 
