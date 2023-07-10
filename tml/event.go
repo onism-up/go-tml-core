@@ -96,7 +96,7 @@ func untieEvent(node Node, eventName uint8, callback EventCallBack) bool {
 
 // triggerEvent Trigger event
 // @parma node: The Node to which the event is to be triggered  eventName: Event type  origen: Event source node
-// @return 执行结果
+// @return Execution result
 func triggerEvent(node Node, eventName uint8, origen Node) bool {
 	attr, _ := node.GetAttr()
 	nodeEventAny, ok := eventStore.Load(attr.Key)
