@@ -100,15 +100,15 @@ func backSelect(node Node) {
 // Start initializes the service, using the framework's mandatory function, which does most of the initialization
 // @parma autoFlash: Whether to automatically render, and the relatively timely response to the window during automatic rendering fy: rendering frequency and window size acquisition frequency, the base unit is ms keyBordEvent: whether to enable key event listening
 func Start(fy uint16, keyBordEvent bool) {
-	//确保未初始化
+	//Make sure it is not initialized
 	if isInit {
 		return
 	}
 
-	// 初始化name分类map
+	// Example Initialize the name class map
 	nameLibrary = make(map[string]NodeStack)
 
-	//初始化Body
+	// Initialize the Body
 	Body = CreateQuadrilateral(BodyName)
 	Body.SetVolume(CanvasVolume{ // Only the width and height programs that display the declaration for adjustment have the right to change
 		Width:  Auto,
@@ -145,7 +145,7 @@ func elementLoop(node Node) {
 	}
 
 	renderResult := renderer(node) // Render node first to determine the node adaptability
-	if !renderResult {             //父组件无法渲染则停止所有子组件的渲染
+	if !renderResult {             // If the parent component cannot render, the rendering of all child components is stopped
 		return
 	}
 
@@ -214,7 +214,7 @@ func debounce(interval time.Duration) func(f func()) {
 // @parma node: The node to be rendered
 // @return node render the result, the result should come from different renderers, all renderers should return the correct rendering result for the renderer function
 func renderer(node Node) bool {
-	if notRenderable() || node.isUnMount() { //在窗口可视的情况下渲染，组件未销毁的情况下渲染
+	if notRenderable() || node.isUnMount() { // Render when the window is visible, and render when the component is not destroyed
 		return false
 	}
 	nodeAttr, _ := node.GetAttr()
@@ -325,7 +325,7 @@ func delNodeFromRenderStack(node Node) {
 		for index, stackNode := range nodeStack {
 			snAttr, _ := stackNode.GetAttr()
 			if snAttr.Key == attr.Key {
-				newNodeStack := append(nodeStack[:index], nodeStack[index+1:]...) //删除元素
+				newNodeStack := append(nodeStack[:index], nodeStack[index+1:]...) // Delete a node
 				zIndexStack.Store(position.ZIndex, newNodeStack)
 				break
 			}
@@ -376,7 +376,7 @@ func lodeNodeToNameIndex(node Node) bool {
 	attr, _ := node.GetAttr()
 	base, ok := nameLibrary[attr.Name]
 	if ok {
-		for _, value := range base { //去重
+		for _, value := range base { // duplicate removal
 			snAttr, _ := value.GetAttr()
 			if snAttr.Key == attr.Key {
 				return false
