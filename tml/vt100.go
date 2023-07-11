@@ -46,7 +46,7 @@ func squareDrawing(ql *Quadrilateral) bool {
 		cRight = cLeft + cWidth
 		cBottom = cTop + cHeight
 
-		if position.X > cWidth || position.Y > cHeight || position.X+volume.Width <= 0 || position.Y+volume.Height <= 0 { //不会在父节点中渲染
+		if position.X > cWidth || position.Y > cHeight || position.X+volume.Width <= 0 || position.Y+volume.Height <= 0 { // Does not render in the parent node
 			return false
 		}
 	} else {
