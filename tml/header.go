@@ -339,7 +339,7 @@ func (rt *RenderZIndexTree) Init(nodes NodeStack) {
 	copy(rt.nodeBase, nodes)
 }
 
-// PaintingTree 绘画树的接口
+// PaintingTree Interface of the painting tree
 type PaintingTree interface {
 	GetNode() (Node, bool) // Get the next node
 	Init(NodeStack)        // initialize

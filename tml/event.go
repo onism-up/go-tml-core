@@ -127,7 +127,7 @@ func displayEventTrigger(node Node, origen Node, display bool, deep bool) {
 
 	style, _ := node.GetStyle()
 
-	if style.Display != false { //只有node可显的时候触发事件
+	if style.Display != false { // Events are triggered when only node is visible
 		triggerEvent(node, key, origen)
 
 		if deep {

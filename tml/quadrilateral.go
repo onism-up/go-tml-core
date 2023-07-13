@@ -261,7 +261,7 @@ func (ql *Quadrilateral) Remove() error { // Trigger show and hide events and tr
 	delNodeFromNameIndex(ql)
 	delNodeFromBase(ql)
 	deleteEvent(ql)
-	triggerEvent(ql, OnRemove, ql) //触发卸载事件
+	triggerEvent(ql, OnRemove, ql)
 	if nodeParent != nil && !nodeParent.isUnMount() {
 		nodeParent.RemoveChildren(ql)
 	}

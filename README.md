@@ -6,6 +6,9 @@
 ![Powered](https://img.shields.io/badge/Powered%20by-onism-blue)
 ![Status](https://img.shields.io/badge/Status-Test%20phase-red)
 
+## Language
+[简体中文](/README_ZH_CN.md)
+
 ## Demonstration
 ![Demonstration](https://raw.githubusercontent.com/onism-up/go-tml-core/main/static/medium/demo.gif)
 
@@ -19,7 +22,7 @@
 
 > Ensure that the target terminal supports VT100 before use,The output of the program is based on VT100.
 ## Start
-Here shows part of the code, he can not run correctly, if you want to see all the code, please view or debug in the [demo](github.com/onism-up/go-tml-core/tree/main/demo)
+Here shows part of the code, he can not run correctly, if you want to see all the code, please view or debug in the [demo](/demo)
 ```go
 package main
 
