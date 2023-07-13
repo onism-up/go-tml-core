@@ -50,6 +50,7 @@ const (
 	PositionX      uint8 = 1 //Used for x centering in Position
 	PositionY      uint8 = 2 //Used for y centering in Position
 	PositionXY     uint8 = 3 //Used for x and y centering in Position
+
 )
 
 // Error information constant
