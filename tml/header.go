@@ -44,15 +44,12 @@ var (
 
 // style correlation constant
 const (
-	None            uint8 = 0 //This style is usually not valid
-	ContinuousLine  uint8 = 1 //Continuous line
-	DottedLine      uint8 = 2 //Dashed line
-	PositionX       uint8 = 1 //Used for x centering in Position
-	PositionY       uint8 = 2 //Used for y centering in Position
-	PositionXY      uint8 = 3 //Used for x and y centering in Position
-	PositionRightX  uint8 = 4 //x aligned to the right
-	PositionRightY  uint8 = 5 //y aligned to the bottom
-	PositionRightXY uint8 = 6 //xy aligned to the bottom right
+	None           uint8 = 0 //This style is usually not valid
+	ContinuousLine uint8 = 1 //Continuous line
+	DottedLine     uint8 = 2 //Dashed line
+	PositionX      uint8 = 1 //Used for x centering in Position
+	PositionY      uint8 = 2 //Used for y centering in Position
+	PositionXY     uint8 = 3 //Used for x and y centering in Position
 )
 
 // Error information constant

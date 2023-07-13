@@ -70,7 +70,7 @@ func listenKeyBord() {
 	}
 }
 
-// Select Select a node to be used as the output node to listen for onKeyBord events. This node must listen for OnKeyBord events. Otherwise, the node automatically rolls back until the parent node has a listener or Body
+// Select the select a node to be used as the output node to listen for onKeyBord events. This node must listen for OnKeyBord events. Otherwise, the node automatically rolls back until the parent node has a listener or Body
 // @parma node Selected node
 func Select(node Node) {
 	if node != nil {
@@ -275,6 +275,18 @@ func CreateQuadrilateral(name string) Node {
 	createEvent(element)           // Create an event
 
 	return element
+}
+
+// CreateNode Easy to create different types of nodes
+// @parma nodeType: Type of Node name: Node name
+// @return The final Node created will return nil if the type is incorrect
+func CreateNode(nodeType string, name string) Node {
+	var node Node = nil
+	switch nodeType {
+	case QuadrilateralTag:
+		node = CreateQuadrilateral(name)
+	}
+	return node
 }
 
 // loadBase loads the node to the corresponding global repository
